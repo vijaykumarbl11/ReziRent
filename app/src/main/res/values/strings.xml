@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">ResiEasy</string>
+    <string name="signin">SignIn</string>
+    <string name="google_map_key">AIzaSyDkPVVReV8LE3j424jAEM7NUajnQmbPrA0</string>
+
+    //ad_unit_ids
+    <string name="App_ad_id">ca-app-pub-7452604215898958~5879869215</string>
+    <string name="MAbanner_id">ca-app-pub-7452604215898958/3705185914</string>
+    <string name="Settingbanner_id">ca-app-pub-7452604215898958/4826695892</string>
+    <string name="ShowResibanner_id">ca-app-pub-7452604215898958/7261287549</string>
+    <string name="ShowSellbanner_id">ca-app-pub-7452604215898958/2008960865</string>
+    <string name="ShowHostelbanner_id">ca-app-pub-7452604215898958/5756634184</string>
+
+    <string name="Profileleadbuttoninterstitial_id">ca-app-pub-7452604215898958/9504307508</string>
+    <string name="Leadwhatsappbtninterstitial_id">ca-app-pub-7452604215898958/1242674109</string>
+    <string name="Leadcallbtnintertitial_id">ca-app-pub-7452604215898958/2364184087</string>
+
+    <string name="Showresidatacallintertitial_id">ca-app-pub-7452604215898958/8546449051</string>
+    <string name="Showresidatawhatsintertitial_id">ca-app-pub-7452604215898958/8354877368</string>
+    <string name="Showselldatacallintertitial_id">ca-app-pub-7452604215898958/4833121677</string>
+    <string name="Showselldatawhatsintertitial_id">ca-app-pub-7452604215898958/4066834913</string>
+    <string name="Showhosteldatacallintertitial_id">ca-app-pub-7452604215898958/4996773201</string>
+    <string name="Showhosteldatawhatsintertitial_id">ca-app-pub-7452604215898958/1057528199</string>
+
+    <string name="Ownresieditinterstitial_id">ca-app-pub-7452604215898958/5926711492</string>
+    <string name="Ownresishowinterstitial_id">ca-app-pub-7452604215898958/9674384815</string>
+    <string name="Ownselleditinterstitial_id">ca-app-pub-7452604215898958/7040374817</string>
+    <string name="Ownsellshowinterstitial_id">ca-app-pub-7452604215898958/6856649787</string>
+    <string name="Ownhosteleditinterstitial_id">ca-app-pub-7452604215898958/5543568119</string>
+    <string name="Ownhostelshowinterstitial_id">ca-app-pub-7452604215898958/4230486446</string>
+
+    <string-array name="Rental">
+        <item>Flat</item>
+        <item>Room</item>
+        <item>Stutter</item>
+        <item>House</item>
+        <item>Building</item>
+
+    </string-array>
+    <string-array name="Rental1">
+        <item> </item>
+        <item>Flat</item>
+        <item>Room</item>
+        <item>Stutter</item>
+        <item>House</item>
+        <item>Building</item>
+
+    </string-array>
+
+    <string-array name="Sell">
+        <item>Flat</item>
+        <item>Stutter</item>
+        <item>House</item>
+        <item>Building</item>
+        <item>Land</item>
+        <item>Room</item>
+
+
+    </string-array>
+    <string-array name="Sell1">
+        <item> </item>
+        <item>Flat</item>
+        <item>Stutter</item>
+        <item>House</item>
+        <item>Building</item>
+        <item>Land</item>
+        <item>Room</item>
+
+
+    </string-array>
+
+    <string-array name="Area">
+
+        <item>Anand Nagar</item>
+        <item>Asarjan</item>
+        <item>Ashok Nagar</item>
+
+        <item>Baba Nagar</item>
+        <item>Bafna</item>
+        <item>Balirampur</item>
+        <item>Bhagya Nagar</item>
+
+        <item>Chaitanya Nagar</item>
+        <item>Chaufula</item>
+        <item>CIDCO</item>
+
+        <item>Dhanegaon</item>
+
+        <item>Farande Nagar</item>
+
+        <item>Ganesh Nagar</item>
+        <item>Gopalchiwadi</item>
+
+        <item>Hanuman Gad</item>
+        <item>Harsh Nagar</item>
+        <item>Hingoli Gate</item>
+        <item>HUDCO</item>
+        <item>Hyder Bagh</item>
+
+        <item>Itwara</item>
+
+        <item>Kabra Nagar</item>
+        <item>Kala Mandir</item>
+        <item>Kamtha Village</item>
+        <item>Kautha</item>
+        <item>Kautha(New)</item>
+        <item>Khadkpura</item>
+
+        <item>Labour Colony</item>
+        <item>Lokmitra Nagar</item>
+
+        <item>MIDC</item>
+        <item>Mondha(New)</item>
+        <item>Mondha(Old)</item>
+        <item>Mujampeth</item>
+
+        <item>Peer Burhan Nagar</item>
+
+        <item>Ravi Nagar(Kautha)</item>
+
+        <item>Sarafa</item>
+        <item>Shahu Nagar</item>
+        <item>Shivaji Nagar</item>
+        <item>Shrawasti Nagar</item>
+        <item>Shri Nagar</item>
+        <item>Shyam Nagar</item>
+
+        <item>Taroda bk</item>
+        <item>Taroda kh</item>
+
+        <item>Vadibudruk</item>
+        <item>Vajirabad</item>
+        <item>Vasarani</item>
+        <item>Vishnupuri</item>
+
+        <item>Wajegaon</item>
+
+
+    </string-array>
+    <string-array name="Area1">
+        <item> </item>
+        <item>Anand Nagar</item>
+        <item>Asarjan</item>
+        <item>Ashok Nagar</item>
+
+        <item>Baba Nagar</item>
+        <item>Bafna</item>
+        <item>Balirampur</item>
+        <item>Bhagya Nagar</item>
+
+        <item>Chaitanya Nagar</item>
+        <item>Chaufula</item>
+        <item>CIDCO</item>
+
+        <item>Dhanegaon</item>
+
+        <item>Farande Nagar</item>
+
+        <item>Ganesh Nagar</item>
+        <item>Gopalchiwadi</item>
+
+        <item>Hanuman Gad</item>
+        <item>Harsh Nagar</item>
+        <item>Hingoli Gate</item>
+        <item>HUDCO</item>
+        <item>Hyder Bagh</item>
+
+        <item>Itwara</item>
+
+        <item>Kabra Nagar</item>
+        <item>Kala Mandir</item>
+        <item>Kamtha Village</item>
+        <item>Kautha</item>
+        <item>Kautha(New)</item>
+        <item>Khadkpura</item>
+
+        <item>Labour Colony</item>
+        <item>Lokmitra Nagar</item>
+
+        <item>MIDC</item>
+        <item>Mondha(New)</item>
+        <item>Mondha(Old)</item>
+        <item>Mujampeth</item>
+
+        <item>Peer Burhan Nagar</item>
+
+        <item>Ravi Nagar(Kautha)</item>
+
+        <item>Sarafa</item>
+        <item>Shahu Nagar</item>
+        <item>Shivaji Nagar</item>
+        <item>Shrawasti Nagar</item>
+        <item>Shri Nagar</item>
+        <item>Shyam Nagar</item>
+
+        <item>Taroda bk</item>
+        <item>Taroda kh</item>
+
+        <item>Vadibudruk</item>
+        <item>Vajirabad</item>
+        <item>Vasarani</item>
+        <item>Vishnupuri</item>
+
+        <item>Wajegaon</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

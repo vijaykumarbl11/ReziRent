@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainblue">#21488C</color>
+    <color name="lightblack">#898787</color>
+    <color name="black">#191818</color>
+    <color name="darkblack">#FF000000</color>
+    <color name="lightwhite">#F1EFEF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#09A40E</color>
+    <color name="googlewhite">#FFFFFF</color>
+    <color name="qqww">#1B1A1A</color>
+    <color name="zzxx">#111111</color>
+    <color name="yellow">#F0F806</color>
+    <color name="forcheckbox">#A5CADB</color>
+    <color name="orange">#747405</color>
+    <color name="red">#DD0A0A</color>
+
+
+    <color name="shimmercolor">#E8E2E2</color>
+</resources>

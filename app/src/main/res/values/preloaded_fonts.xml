@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abel</item>
+        <item>@font/actor</item>
+        <item>@font/adamina</item>
+        <item>@font/allerta</item>
+        <item>@font/amaranth</item>
+        <item>@font/andada</item>
+        <item>@font/andika</item>
+        <item>@font/anonymous_pro</item>
+        <item>@font/arima_madurai_thin</item>
+        <item>@font/cabin</item>
+        <item>@font/changa_extralight</item>
+        <item>@font/courgette</item>
+        <item>@font/fruktur</item>
+        <item>@font/mate</item>
+        <item>@font/telex</item>
+    </array>
+</resources>

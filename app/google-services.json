@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "825775877561",
+    "firebase_url": "https://rezirent-default-rtdb.firebaseio.com",
+    "project_id": "rezirent",
+    "storage_bucket": "rezirent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825775877561:android:c48659196cf648ba4d1a68",
+        "android_client_info": {
+          "package_name": "com.resieasy.rezirent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825775877561-fhd25aj13btnph23ojcvmf2gipgimtg7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4C0KmW8aV4WEqaMe5H5V4D04p4kp6H44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825775877561-fhd25aj13btnph23ojcvmf2gipgimtg7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

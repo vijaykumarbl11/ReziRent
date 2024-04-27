@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EditHostelDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:text="Edit Data"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+
+                android:background="@color/black" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@color/mainblue"
+                        android:backgroundTint="@color/mainblue"
+                        android:visibility="visible"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:background="@color/googlewhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Edit Hostel Details"
+                                android:textColor="@color/darkblack"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Select Hostel/PG Type *"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <RadioGroup
+                                    android:id="@+id/hostelpgview1"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp">
+
+                                    <RadioButton
+                                        android:id="@+id/boyshostel"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:checked="true"
+                                        android:paddingEnd="50dp"
+                                        android:text="Boys Hostel" />
+
+                                    <RadioButton
+                                        android:id="@+id/girlshostel"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+
+                                        android:paddingEnd="50dp"
+                                        android:text="Girls Hostel" />
+
+                                    <RadioButton
+                                        android:id="@+id/boyspg"
+                                        android:layout_marginTop="10dp"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingEnd="50dp"
+                                        android:text="Boys PG" />
+
+                                    <RadioButton
+                                        android:id="@+id/girlspg"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+
+                                        android:paddingEnd="50dp"
+                                        android:text="Girls PG" />
+
+
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/texsstView5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="Fill the below complete information well so that tenants can undetsand easily" />
+
+                            <TextView
+                                android:id="@+id/textVddiew5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="Fields marked with a star(*) are mandatory to fill" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/mainblue"
+                        android:visibility="visible"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:background="@color/googlewhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textVdiew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Residency Information"
+                                android:textColor="@color/darkblack"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/texddtVdiew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Name *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/resiname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="Residency Name"
+                                android:inputType="text"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/texddtVdiedw4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Address *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/resiaddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="Residency Address"
+                                android:inputType="textMultiLine"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/texddtVdidew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Area *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <FrameLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp">
+
+                                <Spinner
+                                    android:id="@+id/areatype"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/search"
+                                    android:hint="Select Query"
+                                    android:padding="15dp"
+                                    android:textSize="20sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/vieareatext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_gravity="center_vertical"
+
+                                    android:layout_marginEnd="20dp"
+                                    android:padding="10dp"
+                                    android:textColor="@color/black"
+                                    android:text="TextView"
+                                    android:textSize="16sp" />
+
+                            </FrameLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/texddddtVdiew4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="20dp"
+                                    android:text="Location *"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/texddddtVhdiew4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:text="Click on the below button to capture your current location. You should be at residencial location."
+                                    android:textSize="14sp"
+                                    android:textStyle="normal" />
+
+                                <Button
+                                    android:id="@+id/capturelocation2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|top"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:backgroundTint="@color/mainblue"
+                                    android:text="ReCapture"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="10dp" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:visibility="visible">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Previously added location-" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/olshowlocationtext"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Latitude and longitude"
+                                                android:textSize="14sp" />
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_marginStart="10dp"
+                                                app:srcCompat="@drawable/checkmark" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="10dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="bottom"
+                                                android:layout_marginEnd="10dp"
+                                                android:layout_marginBottom="10dp"
+                                                android:layout_weight="12"
+                                                android:text="View previously selected residency location on map"
+                                                android:textColor="#005DFF"
+                                                android:textSize="14sp" />
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/olmapview"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="5dp"
+                                                android:layout_weight="12"
+                                                app:cardCornerRadius="20dp">
+
+                                                <ImageView
+                                                    android:layout_width="100dp"
+                                                    android:layout_height="80dp"
+                                                    android:layout_marginStart="20dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    app:srcCompat="@drawable/imagmap" />
+                                            </androidx.cardview.widget.CardView>
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </FrameLayout>
+                                <FrameLayout
+                                    android:id="@+id/locationview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:visibility="gone">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Current location fetch successfully, latitude and longitude are-" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/showlocationtext"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=""
+                                                android:textSize="14sp" />
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_marginStart="10dp"
+                                                app:srcCompat="@drawable/checkmark" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="10dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView82"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="bottom"
+                                                android:layout_marginEnd="10dp"
+                                                android:layout_marginBottom="10dp"
+                                                android:layout_weight="12"
+                                                android:text="View currently selected residency location on map"
+                                                android:textColor="#005DFF"
+                                                android:textSize="14sp" />
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/mapview"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="5dp"
+                                                android:layout_weight="12"
+                                                app:cardCornerRadius="20dp">
+
+                                                <ImageView
+                                                    android:layout_width="100dp"
+                                                    android:layout_height="80dp"
+                                                    android:layout_marginStart="20dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    app:srcCompat="@drawable/imagmap" />
+                                            </androidx.cardview.widget.CardView>
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </FrameLayout>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/mainblue"
+                        android:visibility="visible"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:background="@color/googlewhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tedxtVdfseidew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Contact Details"
+                                android:textColor="@color/darkblack"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/texdsddfdtVdeiew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Operator Name *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/oname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="Operator Name"
+                                android:inputType="text"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/texdsddftVediedw4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Contact Number *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/contact"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="Contact Number"
+                                android:inputType="textMultiLine"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/texddtVsdddfideew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="WhatsApp Number *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/whatsapp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="WhatsApp Number"
+                                android:inputType="textMultiLine"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/texdddfddtedVdiew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Email Address (optional)"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="Email Address"
+                                android:inputType="textMultiLine"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/mainblue"
+                        android:visibility="visible"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:background="@color/googlewhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/justrehds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Rent Details"
+                                android:textColor="@color/darkblack"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tesxdsddfdtVdiew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Monthaly Rent *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/rentamount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/search"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="1000 \u20B9 \u20A8"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/explainrent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="Explain Rent (optional)"
+                                android:inputType="textMultiLine"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/texddtVsdddfsidew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Deposit *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+
+                            <RadioGroup
+                                android:id="@+id/mainradiodeposit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="20dp">
+
+                                <RadioButton
+                                    android:id="@+id/yesdeposit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:paddingEnd="50dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:id="@+id/nodeposit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+
+                                    android:paddingEnd="50dp"
+                                    android:text="No" />
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/nodepositblue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Deposit is not taken"
+                                android:textColor="@color/mainblue"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/deposit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="Explain Deposit With Amount"
+                                android:inputType="textMultiLine"
+                                android:textSize="16sp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/texdddfddtddVdiew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Extra Charges  *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <RadioGroup
+                                android:id="@+id/mainradioextra"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="20dp">
+
+                                <RadioButton
+                                    android:id="@+id/yescharge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:paddingEnd="50dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:id="@+id/nocharge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingEnd="50dp"
+                                    android:text="No" />
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/noextrablue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Extra charges is not taken"
+                                android:textColor="@color/mainblue"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/extracharges"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="Explain Extra Charges With Amount"
+                                android:inputType="textMultiLine"
+                                android:textSize="16sp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/mainblue"
+                        android:visibility="visible"
+                        app:cardCornerRadius="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:background="@color/googlewhite"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tedxhtVdfseidew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Other Details"
+                                android:textColor="@color/darkblack"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/texdsddfgdtVdeihew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="More Details Abount Residency (optional)"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <EditText
+                                android:id="@+id/moredetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:ems="10"
+                                android:fontFamily="@font/telex"
+                                android:hint="More Details Abount Residency"
+                                android:inputType="textMultiLine"
+                                android:textSize="16sp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/texdsddfdtfVdeihew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Residency Leaving Policy *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <RadioGroup
+                                android:id="@+id/mainrediopolicy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:visibility="visible">
+
+                                <RadioButton
+                                    android:id="@+id/yesargee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:paddingEnd="50dp"
+                                    android:text="Agreement will be done" />
+
+                                <LinearLayout
+                                    android:id="@+id/yesagreeview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textView27"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="20dp"
+                                            android:text="Period of agrrement" />
+
+                                        <EditText
+                                            android:id="@+id/periodtime"
+                                            android:layout_width="70dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginStart="10dp"
+                                            android:background="@drawable/search"
+                                            android:ems="10"
+                                            android:gravity="center"
+                                            android:hint="00"
+                                            android:inputType="number"
+                                            android:textColor="@color/black" />
+
+                                        <TextView
+                                            android:id="@+id/textView29"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="5dp"
+                                            android:text="Months" />
+
+                                    </LinearLayout>
+
+                                    <EditText
+                                        android:id="@+id/yesagreetext"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:ems="10"
+                                        android:hint="Write about arrement (optional)"
+                                        android:inputType="textMultiLine"
+                                        android:textSize="16sp" />
+
+                                </LinearLayout>
+
+                                <RadioButton
+                                    android:id="@+id/noagree"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingEnd="50dp"
+                                    android:text="No Agreement, we have own rules" />
+
+                                <EditText
+                                    android:id="@+id/noagreetext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:ems="10"
+                                    android:fontFamily="@font/telex"
+                                    android:hint="Write residency leaving rules (optional)"
+                                    android:inputType="textMultiLine"
+                                    android:textSize="16sp"
+                                    android:visibility="gone" />
+
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/texdsddfdddtVddeihew4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Gate Time *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <RadioGroup
+                                android:id="@+id/mainrediogate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:visibility="visible">
+
+                                <RadioButton
+                                    android:id="@+id/yesgate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:paddingEnd="50dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:id="@+id/nogate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingEnd="50dp"
+                                    android:text="No" />
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/nogateblue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="40dp"
+                                android:text="Not gate limit"
+                                android:textColor="@color/mainblue"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@+id/gatepicker"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="20dp"
+                                        android:gravity="center_horizontal"
+                                        android:text="Opening Time" />
+
+                                    <TextView
+                                        android:id="@+id/openpicker"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginBottom="20dp"
+                                        android:background="@drawable/settingbac"
+                                        android:gravity="center_horizontal"
+                                        android:paddingStart="30dp"
+                                        android:paddingTop="15dp"
+                                        android:paddingEnd="30dp"
+                                        android:paddingBottom="15dp"
+                                        android:hint="Pickup Time" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="20dp"
+                                        android:gravity="center_horizontal"
+                                        android:text="Closing Time" />
+
+                                    <TextView
+                                        android:id="@+id/closepicker"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginBottom="20dp"
+                                        android:background="@drawable/settingbac"
+                                        android:gravity="center_horizontal"
+                                        android:paddingStart="30dp"
+                                        android:paddingTop="15dp"
+                                        android:paddingEnd="30dp"
+                                        android:paddingBottom="15dp"
+                                        android:hint="Pickup Time" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/jusfacciss"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="Facilities *"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/jusfacdfciss"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:text="You can select below facilities-"
+                                android:textSize="14sp"
+                                android:visibility="visible" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkCleanontime"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+
+                                        android:text="Clean on time"
+                                        android:textSize="14sp"
+                                        android:visibility="visible" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkac"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="AC"
+
+                                        android:textSize="14sp"
+                                        android:visibility="visible" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkrowateer"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="RO water"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkwateerr"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="24/7 water"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkwifi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="WiFi"
+                                        android:textSize="14sp" />
+
+
+                                    <CheckBox
+                                        android:id="@+id/checkcamera"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="CCTV camera"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkbed"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="Bed &amp; Mattress"
+                                        android:textSize="14sp" />
+
+
+                                    <CheckBox
+                                        android:id="@+id/checkhotwater"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="Geyser | Hot water"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checktable"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Chair | Table"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checklocker"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Locker"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkcooler"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Cooler | Fan"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkpower"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+
+                                        android:paddingEnd="10dp"
+
+                                        android:text="24/7 power backup"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkwashing"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+                                        android:text="Washing Machine"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checksecurity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="24/7 Security"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkinout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="24/7 Check in out"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkattached"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="15dp"
+
+                                        android:text="Attached Toilet &amp; Bathroom"
+                                        android:textSize="14sp" />
+
+
+                                    <CheckBox
+                                        android:id="@+id/checkshower"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="Shower"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+
+                                    <CheckBox
+                                        android:id="@+id/checkparking"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Parking splace"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkmess"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="In house restaurant | Mess"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+
+                                    <CheckBox
+                                        android:id="@+id/checktv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="TV"
+                                        android:textSize="14sp" />
+
+
+                                    <CheckBox
+                                        android:id="@+id/checkgas"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Induction | Gas"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkdining"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Dining table"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+
+                                    <CheckBox
+                                        android:id="@+id/checkrefre"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Refrigirator"
+                                        android:textSize="14sp" />
+
+
+                                    <CheckBox
+                                        android:id="@+id/checksofa"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Sofa set"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkelvator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+                                        android:text="Elevator"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+
+                                    <CheckBox
+                                        android:id="@+id/checkground"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Playground"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkgym"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+                                        android:text="GYM"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkstudyroom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="5dp"
+
+                                        android:text="Study room"
+                                        android:textSize="14sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+
+                                    <CheckBox
+                                        android:id="@+id/checkkitchenn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="15dp"
+
+                                        android:text="Kitchen"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbalcony"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="15dp"
+
+                                        android:text="Balcony available"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkindiant"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="15dp"
+
+                                        android:text="Indian toilet"
+                                        android:textSize="14sp" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkwesterntt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="15dp"
+
+                                        android:text="Western toilet"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkterrace"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+
+                                        android:text="Permission for terrace"
+                                        android:textSize="14sp" />
+
+
+                                    <CheckBox
+                                        android:id="@+id/checkfullf"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/checkbac"
+                                        android:paddingEnd="10dp"
+                                        android:text="Furnished"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/facility"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:ems="10"
+                                    android:fontFamily="@font/telex"
+                                    android:hint="More Facilities"
+                                    android:inputType="textMultiLine"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/texdsddftVedhiedw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="20dp"
+                                    android:text="Rule &amp; Restriction *"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/texdsddfdtVedhiedw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="20dp"
+                                    android:text="You can select below rule &amp; restriction-"
+                                    android:textSize="14sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/clinerule"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Cleanliness should be well maintained" />
+
+                                    <CheckBox
+                                        android:id="@+id/nottrublerule"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Make sure that you do not cause trouble the other" />
+
+                                    <CheckBox
+                                        android:id="@+id/licencerule"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Leave and license agreement will be done" />
+
+                                    <CheckBox
+                                        android:id="@+id/entryrule"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Entry must be made in the register kept outside while leaving and entering the residency" />
+
+                                    <CheckBox
+                                        android:id="@+id/alcoholrule"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Alcohol cigarettes and other type of drugs are not allowed" />
+
+                                    <CheckBox
+                                        android:id="@+id/damagerule"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="If you damage the residencial propery, it will be reimbursed from you/deposit" />
+
+                                    <CheckBox
+                                        android:id="@+id/outsiderrule"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Outsiders will not be allowed with you" />
+
+                                    <CheckBox
+                                        android:id="@+id/prentperule"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Parent's permission is required for longer leave" />
+
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/rules"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:ems="10"
+                                    android:fontFamily="@font/telex"
+                                    android:hint="More Rule &amp; Ristriction"
+                                    android:inputType="textMultiLine"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/texdffddtVdiew4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="Image *"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/texdddfffdtVhdiew4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Click below button to select recidencial images from gellery, you can select multiple images."
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/numbertext"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="20dp"
+                            android:textColor="@color/red"
+                            android:text="Please select more than 1 and less than 11 images"
+                            />
+
+                        <Button
+                            android:id="@+id/opengallerybtn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|top"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:backgroundTint="@color/mainblue"
+                            android:text="Open Gallery"
+                            android:textColor="@color/white"
+                            app:cornerRadius="10dp" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cureentimageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Current Selected Images"
+                            android:textColor="@color/lightblack"
+                            android:textSize="16sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/multiimagerec"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="30dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Old Selected Images"
+                            android:textColor="@color/lightblack"
+                            android:textSize="16sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/multiimagerec2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submitresibtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/mainblue"
+                    android:text="Submit Data"
+                    android:textColor="@color/white"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

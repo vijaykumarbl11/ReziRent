@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ww1"
+        android:title="Home" />
+    <item
+        android:id="@+id/navrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/aad"
+
+        android:title="Rental" />
+    <item
+        android:id="@+id/navsell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/age"
+
+        android:title="Sell" />
+    <item
+        android:id="@+id/navhostel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/aab"
+
+        android:title="Cot-Base" />
+</menu>
